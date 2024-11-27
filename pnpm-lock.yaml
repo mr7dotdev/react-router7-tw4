@@ -15,7 +15,7 @@ importers:
         version: 7.0.1(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.2)
       "@tailwindcss/vite":
         specifier: 4.0.0-beta.2
-        version: 4.0.0-beta.2(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.8)(typescript@5.7.2)(vite@5.4.11(@types/node@20.17.8)(lightningcss@1.28.2))
+        version: 4.0.0-beta.2(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.9)(typescript@5.7.2)(vite@5.4.11(@types/node@20.17.8)(lightningcss@1.28.2))
       isbot:
         specifier: ^5.1.17
         version: 5.1.17
@@ -68,6 +68,9 @@ importers:
       prettier:
         specifier: 3.4.1
         version: 3.4.1
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.9
+        version: 0.6.9(prettier@3.4.1)
       typescript:
         specifier: ^5.6.3
         version: 5.7.2
@@ -2895,6 +2898,64 @@ packages:
       }
     engines: { node: ">= 0.8.0" }
 
+  prettier-plugin-tailwindcss@0.6.9:
+    resolution:
+      {
+        integrity: sha512-r0i3uhaZAXYP0At5xGfJH876W3HHGHDp+LCRUJrs57PBeQ6mYHMwr25KH8NPX44F2yGTvdnH7OqCshlQx183Eg==,
+      }
+    engines: { node: ">=14.21.3" }
+    peerDependencies:
+      "@ianvs/prettier-plugin-sort-imports": "*"
+      "@prettier/plugin-pug": "*"
+      "@shopify/prettier-plugin-liquid": "*"
+      "@trivago/prettier-plugin-sort-imports": "*"
+      "@zackad/prettier-plugin-twig-melody": "*"
+      prettier: ^3.0
+      prettier-plugin-astro: "*"
+      prettier-plugin-css-order: "*"
+      prettier-plugin-import-sort: "*"
+      prettier-plugin-jsdoc: "*"
+      prettier-plugin-marko: "*"
+      prettier-plugin-multiline-arrays: "*"
+      prettier-plugin-organize-attributes: "*"
+      prettier-plugin-organize-imports: "*"
+      prettier-plugin-sort-imports: "*"
+      prettier-plugin-style-order: "*"
+      prettier-plugin-svelte: "*"
+    peerDependenciesMeta:
+      "@ianvs/prettier-plugin-sort-imports":
+        optional: true
+      "@prettier/plugin-pug":
+        optional: true
+      "@shopify/prettier-plugin-liquid":
+        optional: true
+      "@trivago/prettier-plugin-sort-imports":
+        optional: true
+      "@zackad/prettier-plugin-twig-melody":
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-marko:
+        optional: true
+      prettier-plugin-multiline-arrays:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-sort-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+
   prettier@2.8.8:
     resolution:
       {
@@ -3377,10 +3438,10 @@ packages:
       typescript:
         optional: true
 
-  svelte@5.2.8:
+  svelte@5.2.9:
     resolution:
       {
-        integrity: sha512-VU7a01XwnFi6wXVkH5QY3FYXRZWrhsWZhaE8AYU6UeYZdslE3TFgQq6+HLrbMjOLkVhdKt74NGHYbhFeErQQ6g==,
+        integrity: sha512-LjO7R6K8FI8dA3l+4CcsbJ3djIe2TtokHGzfpDTro5g8nworMbTz9alCR95EQXGsqlzIAvqJtZ7Yy0o33lL09Q==,
       }
     engines: { node: ">=18" }
 
@@ -4287,12 +4348,12 @@ snapshots:
       "@tailwindcss/oxide-win32-arm64-msvc": 4.0.0-beta.2
       "@tailwindcss/oxide-win32-x64-msvc": 4.0.0-beta.2
 
-  "@tailwindcss/vite@4.0.0-beta.2(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.8)(typescript@5.7.2)(vite@5.4.11(@types/node@20.17.8)(lightningcss@1.28.2))":
+  "@tailwindcss/vite@4.0.0-beta.2(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.9)(typescript@5.7.2)(vite@5.4.11(@types/node@20.17.8)(lightningcss@1.28.2))":
     dependencies:
       "@tailwindcss/node": 4.0.0-beta.2
       "@tailwindcss/oxide": 4.0.0-beta.2
       lightningcss: 1.28.2
-      svelte-preprocess: 6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.8)(typescript@5.7.2)
+      svelte-preprocess: 6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.9)(typescript@5.7.2)
       tailwindcss: 4.0.0-beta.2
       vite: 5.4.11(@types/node@20.17.8)(lightningcss@1.28.2)
     transitivePeerDependencies:
@@ -5379,6 +5440,10 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
+  prettier-plugin-tailwindcss@0.6.9(prettier@3.4.1):
+    dependencies:
+      prettier: 3.4.1
+
   prettier@2.8.8: {}
 
   prettier@3.4.1: {}
@@ -5650,15 +5715,15 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  svelte-preprocess@6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.8)(typescript@5.7.2):
+  svelte-preprocess@6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.9)(typescript@5.7.2):
     dependencies:
-      svelte: 5.2.8
+      svelte: 5.2.9
     optionalDependencies:
       "@babel/core": 7.26.0
       postcss: 8.4.49
       typescript: 5.7.2
 
-  svelte@5.2.8:
+  svelte@5.2.9:
     dependencies:
       "@ampproject/remapping": 2.3.0
       "@jridgewell/sourcemap-codec": 1.5.0

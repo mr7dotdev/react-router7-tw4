@@ -2,6 +2,7 @@
 !.env.example
 .DS_Store
 .react-router
+.vscode
 build
 node_modules
 *.tsbuildinfo

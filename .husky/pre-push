@@ -3,3 +3,14 @@
 
 pnpm exec eslint . --fix
 pnpm exec prettier --write .
+
+# Stage the formatted files for commit
+git add .
+
+# Check if the files were staged properly
+if git diff --cached --exit-code; then
+  echo "No changes detected, continuing with the push."
+else
+  echo "Changes staged, push will include updated files."
+  exit 1  # Proceed with push if changes were staged
+fi

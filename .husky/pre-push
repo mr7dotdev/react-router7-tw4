@@ -1,8 +1,0 @@
-pnpm exec eslint . --fix
-pnpm exec prettier --write .
-
-# Stage the formatted files for commit
-git add .
-
-# Commit the changes
-git commit --amend --no-edit

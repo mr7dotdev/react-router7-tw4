@@ -6,3 +6,4 @@ git add .
 
 # Commit the changes
 git commit --amend --no-edit
+git commit -m "fix: format code"

@@ -2,6 +2,7 @@ import logoDark from './logo-dark.svg';
 import logoLight from './logo-light.svg';
 
 export function Welcome() {
+  console.log('Welcome rendered');
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex min-h-0 flex-1 flex-col items-center gap-16">

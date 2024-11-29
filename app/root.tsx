@@ -10,6 +10,7 @@ import {
 import type { Route } from './+types/root';
 import stylesheet from './app.css?url';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   {

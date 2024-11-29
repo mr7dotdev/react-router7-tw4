@@ -6,7 +6,9 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc --build --noEmit"
+    "typecheck": "react-router typegen && tsc --build --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@react-router/node": "^7.0.1",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@react-router/dev": "^7.0.1",
     "@types/node": "^20",
     "@types/react": "^18.3.12",
@@ -28,6 +31,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
     "prettier": "3.4.1",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "typescript": "^5.6.3",

@@ -36,6 +36,9 @@ importers:
       '@eslint/js':
         specifier: ^9.15.0
         version: 9.15.0
+      '@ianvs/prettier-plugin-sort-imports':
+        specifier: ^4.4.0
+        version: 4.4.0(prettier@3.4.1)
       '@react-router/dev':
         specifier: ^7.0.1
         version: 7.0.1(@react-router/serve@7.0.1(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.2))(@types/node@20.17.8)(lightningcss@1.28.2)(react-router@7.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.2)(vite@5.4.11(@types/node@20.17.8)(lightningcss@1.28.2))
@@ -60,12 +63,15 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.14
         version: 0.4.14(eslint@9.15.0(jiti@2.4.0))
+      globals:
+        specifier: ^15.12.0
+        version: 15.12.0
       prettier:
         specifier: 3.4.1
         version: 3.4.1
       prettier-plugin-tailwindcss:
         specifier: ^0.6.9
-        version: 0.6.9(prettier@3.4.1)
+        version: 0.6.9(@ianvs/prettier-plugin-sort-imports@4.4.0(prettier@3.4.1))(prettier@3.4.1)
       typescript:
         specifier: ^5.6.3
         version: 5.7.2
@@ -411,6 +417,15 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
+
+  '@ianvs/prettier-plugin-sort-imports@4.4.0':
+    resolution: {integrity: sha512-f4/e+/ANGk3tHuwRW0uh2YuBR50I4h1ZjGQ+5uD8sWfinHTivQsnieR5cz24t8M6Vx4rYvZ5v/IEKZhYpzQm9Q==}
+    peerDependencies:
+      '@vue/compiler-sfc': 2.7.x || 3.x
+      prettier: 2 || 3
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1207,6 +1222,10 @@ packages:
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
+
+  globals@15.12.0:
+    resolution: {integrity: sha512-1+gLErljJFhbOVyaetcwJiJ4+eLe45S2E7P5UiZ9xGfeq3ATQf5DOv9G7MH3gGbKQLkzmNh2DxfZwLdw+j6oTQ==}
     engines: {node: '>=18'}
 
   globrex@0.1.2:
@@ -2470,6 +2489,17 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
+  '@ianvs/prettier-plugin-sort-imports@4.4.0(prettier@3.4.1)':
+    dependencies:
+      '@babel/generator': 7.26.2
+      '@babel/parser': 7.26.2
+      '@babel/traverse': 7.25.9
+      '@babel/types': 7.26.0
+      prettier: 3.4.1
+      semver: 7.6.3
+    transitivePeerDependencies:
+      - supports-color
+
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -3353,6 +3383,8 @@ snapshots:
 
   globals@14.0.0: {}
 
+  globals@15.12.0: {}
+
   globrex@0.1.2: {}
 
   gopd@1.0.1:
@@ -3713,9 +3745,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.9(prettier@3.4.1):
+  prettier-plugin-tailwindcss@0.6.9(@ianvs/prettier-plugin-sort-imports@4.4.0(prettier@3.4.1))(prettier@3.4.1):
     dependencies:
       prettier: 3.4.1
+    optionalDependencies:
+      '@ianvs/prettier-plugin-sort-imports': 4.4.0(prettier@3.4.1)
 
   prettier@2.8.8: {}
 

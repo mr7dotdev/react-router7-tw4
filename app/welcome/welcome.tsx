@@ -1,7 +1,8 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
+import logoDark from './logo-dark.svg';
+import logoLight from './logo-light.svg';
 
 export function Welcome() {
+  console.log('Welcome rendered');
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex min-h-0 flex-1 flex-col items-center gap-16">
@@ -48,8 +49,8 @@ export function Welcome() {
 
 const resources = [
   {
-    href: "https://reactrouter.com/docs",
-    text: "React Router Docs",
+    href: 'https://reactrouter.com/docs',
+    text: 'React Router Docs',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +69,8 @@ const resources = [
     ),
   },
   {
-    href: "https://rmx.as/discord",
-    text: "Join Discord",
+    href: 'https://rmx.as/discord',
+    text: 'Join Discord',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

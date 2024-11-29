@@ -1,10 +1,11 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Welcome } from '../welcome/welcome';
+import type { Route } from './+types/home';
 
-export function meta({}: Route.MetaArgs) {
+// eslint-disable-next-line react-refresh/only-export-components
+export function meta(_: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: 'New React Router App' },
+    { name: 'description', content: 'Welcome to React Router!' },
   ];
 }
 
